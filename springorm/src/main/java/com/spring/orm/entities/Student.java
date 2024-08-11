@@ -16,7 +16,7 @@ public class Student {
 	@Column(name = "student_city")
 	private String studentCity;
 
-	// Constructors, Getters, Setters, toString() method
+	
 	public Student() {
 	}
 
