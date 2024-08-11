@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean class="com.springcore.collections.Emp" name="emp1">
+
+		<property name="name" value="Fahad" />
+
+		<property name="phones">
+			<list>
+				<value> 123</value>
+				<value> 2223</value>
+				<value> 923</value>
+			</list>
+		</property>
+
+		<property name="addresses">
+			<set>
+				<value>Hyd</value>
+				<value>Nizb</value>
+				<value>JNTU</value>
+			</set>
+		</property>
+
+		<property name="courses">
+			<map>
+				<entry key="java" value="100days" />
+				<entry key="cpp" value="50days" />
+				<entry key="python" value="10days" />
+			</map>
+
+		</property>
+	</bean>
+
+</beans>
